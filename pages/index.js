@@ -1,5 +1,17 @@
-export default function Home() {
+import Link from "next/link";
+
+export default function HomePage() {
   return (
-    <h1>Hello</h1>
-  )
+    <div>
+      <h1>Hello</h1>
+      <ul>
+        <li>
+          <Link href="/portfolio">Portfolio</Link>
+        </li>
+        <li>
+          <Link href="/clients">Clients</Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
